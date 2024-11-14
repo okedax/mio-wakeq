@@ -1,0 +1,12 @@
+[package]
+name = "mio-wakeq"
+version = "0.1.0"
+edition = "2021"
+authors = ["Olexandr Keda <olexandr.keda@gmail.com>"]
+description = "mio support for custom event queue via Waker"
+keywords = ["asynchronous", "mio", "waker"]
+categories = ["asynchronous"]
+license = "MIT"
+
+[dependencies]
+mio = { version = "1.0", features = ["os-poll"] }
