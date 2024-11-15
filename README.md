@@ -1,5 +1,11 @@
 # mio-wakeq
 
+[![CI](https://github.com/okedax/mio-wakeq/actions/workflows/rust.yml/badge.svg)](https://github.com/okedax/mio-wakeq/actions/workflows/rust.yml)
+[![crates.io](https://img.shields.io/crates/v/mio-wakeq.svg)](https://crates.io/crates/mio-wakeq)
+[![docs.rs](https://docs.rs/mio-wakeq/badge.svg)](https://docs.rs/mio-wakeq)
+![Rust Version](https://img.shields.io/badge/rust-stable%20%7C%20beta%20%7C%20nightly-blue)
+![License](https://img.shields.io/crates/l/mio-wakeq)
+
 A simple custom event delivery mechanism based on [mio](https://crates.io/crates/mio)'s `Waker` functionality for `mio`-based systems. `mio`'s `Poll` is limited to a single `Waker`, which restricts it to handling only one type of external event.
 However, `mio-wakeq` allows multiple events to be managed and exposed through a single `Waker` within the same `Poll` instance.
 
